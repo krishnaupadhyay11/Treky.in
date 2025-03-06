@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shop_button::after {
+    content: '';
+    display: block;
+    transform: scaleX(0);
+    background-color: black;
+    height: 2px;
+    transition: all 0.3s;
+    transform-origin: left;
+}
+
+.shop_button:hover::after {
+    transform: scaleX(1);
+}
