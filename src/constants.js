@@ -83,29 +83,6 @@ export const popCategories = [
     },
 ]
 
-// export const newArrivals = [
-//     {
-//         src: brandLogo,
-//         title: 'Rab Jacket 111',
-//         mrp: '1000'
-//     },
-//     {
-//         src: brandLogo,
-//         title: 'XY Shoes',
-//         mrp: '1500'
-//     },
-//     {
-//         src: brandLogo,
-//         title: 'KL Pants',
-//         mrp: '2500'
-//     },
-//     {
-//         src: brandLogo,
-//         title: 'Olive Stove',
-//         mrp: '2000'
-//     },
-// ]
-
 import coleman from './assets/brands/Coleman.png'
 import fenix from './assets/brands/fenix.png'
 import himmaleh from './assets/brands/himmaleh.png'

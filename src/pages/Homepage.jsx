@@ -4,7 +4,6 @@ import Slider from "../components/Slider"
 import PopularCategories from "../components/PopularCategories"
 import PopularBrands from "../components/PopularBrands"
 import Look from "../components/Look"
-// import NewArrivals from "../components/NewArrivals"
 import SocialFeed from "../components/SocialFeed"
 import Testimonials from "../components/Testimonials"
 import Footer from "../components/Footer"
@@ -21,7 +20,6 @@ export default function Homepage() {
         <PopularCategories />
         <PopularBrands />
         <Look />
-        {/* <NewArrivals /> */}
         <Testimonials />
         <SocialFeed />
         <Footer />

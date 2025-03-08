@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Homepage, Clothing, Footwear, ProductDetail, Shop, Camping } from './pages/index'
 
-// import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop'
 
 import './App.css'
 
@@ -22,7 +22,7 @@ export default function App() {
   // // }, [pageName])
   return (
     <Router>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/shop" element={<Shop />} />
