@@ -36,8 +36,8 @@ export default function Look() {
                 </div>
 
                 <div className='w-full md:w-1/2 p-4 flex flex-col md:items-center md:justify-center items-start justify-start gap-2'>
-                    <h1 className='text-[32px] font-semibold text-center'>{look.heading}</h1>
-                    <h2 className='text-center'>{look.subheading}</h2>
+                    <h1 className='text-[32px] font-semibold'>{look.heading}</h1>
+                    <p>{look.subheading}</p>
 
                     <Link to='#categories' className='px-3 py-2 bg-black text-white mt-4'>
                         <h1>SHOP NOW</h1>
@@ -48,11 +48,6 @@ export default function Look() {
 
         ))}
 
-    </div>
-    <div className='w-full flex flex-col md:flex-row items-center justify-center'>
-        <div className='w-full md:w-1/2'>
-            
-        </div>
     </div>
     </>
   )

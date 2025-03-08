@@ -11,11 +11,9 @@ import Footer from "../components/Footer"
 export default function Homepage() {
   return (
     <>
-      <div className="w-full fixed top-0 z-[99999] bg-white">
         <Header />
+      <div className="w-full flex flex-col items-center relative top-[70px]">
         <Latests />
-      </div>
-      <div className="w-full flex flex-col items-center relative top-[100px]">
         <Slider />
         <PopularCategories />
         <PopularBrands />

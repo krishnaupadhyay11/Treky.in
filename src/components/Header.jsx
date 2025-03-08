@@ -13,8 +13,17 @@ export default function Header() {
 
     const activeNavLink = window.location.pathname
 
+    window.onscroll = () => {
+      var top = window.scrollY;
+      if (top > 100) {
+          document.querySelector('header').classList.add('headerScroll')
+    } else {
+          document.querySelector('header').classList.remove('headerScroll')
+      }
+    }
+
   return (
-    <header className="w-full py-1 px-2 md:px-6 flex items-center justify-between z-[9999] transition-all duration-300 ease-in-out">
+    <header className="w-full py-1 px-2 md:px-6 flex items-center justify-between z-[9999] transition-all duration-300 ease-in-out fixed bg-white">
       <div className='w-[110px] md:ml-4'>
         <Link to='/' onClick={() => window.scroll(0,0)}>
           <img src={logob} alt='Treky.in Logo' className='w-full h-full object-contain'/>          

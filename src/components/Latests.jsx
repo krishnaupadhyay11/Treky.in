@@ -28,7 +28,7 @@ export default function Latests() {
     }, [currentLatest])
     
   return (
-    <div className='w-full bg-black flex flex-col items-center overflow-hidden h-[36px]'>
+    <div className='w-full bg-black flex flex-col items-center overflow-hidden h-[40px]'>
         {latests.map((latest, index) => (
             <div className='w-full h-full text-white transition-all duration-300 ease-in-out text-center flex-shrink-0 flex-grow-0 flex flex-col items-center justify-center text-[14px]' key={index} style={{transform: `translateY(${-100*currentLatest}%)`}}>
                 {latest.text}
