@@ -22,9 +22,9 @@ export default function Header() {
       </div>
 
       <div className='flex items-center'>
-        <Link to='/shop' className='flex items-center mr-4 md:mr-8 border-b border-black hover:border-none'>
+        <Link to='/shop' className='flex items-center mr-4 md:mr-8'>
             <i className="uil uil-map-marker"></i>  
-            <p className='shop_button'>Visit Shop</p>
+            <p className='shop_button border-b border-black'>Visit Shop</p>
         </Link>
 
         <div className='md:hidden'>

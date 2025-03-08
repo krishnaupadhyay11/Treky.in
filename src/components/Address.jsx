@@ -24,10 +24,10 @@ export default function Address() {
         </p>
 
         <div className="w-full max-w-[650px] mx-auto flex flex-basis-1 flex-col md:flex-row items-center justify-between gap-4">
-            <a href="https://trekky.in" className="flex items-center gap-1">
+            <a href="https://treky.in" className="flex items-center gap-1">
                 <i className="uil uil-globe text-[18px] font-thin"></i>
                 <p className="text-center">
-                    trekky.in
+                    treky.in
                 </p>
             </a>
 

@@ -7,7 +7,7 @@ const Product = ({productImageSrc, productName, productMRP, productId, pageName}
                 <img src={productImageSrc} alt="Treky.in Products" className="w-full h-full object-contain" loading="lazy"/>            
             </Link>
         </div>
-        <div className="flex w-[90%] justify-between">
+        <div className="flex w-[90%] justify-between items-center">
             <div className="w-full flex flex-col gap-2">
                 <h2 className="font-bold">{productName}</h2>
 

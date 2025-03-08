@@ -1,6 +1,16 @@
 import { useState, useEffect } from 'react'
 
-import { latests } from '../constants'
+const latests = [
+    {
+        text: 'We offer home delivery on select products.'
+    },
+    {
+        text: 'We are now 30,000+ subscribers on YouTube.'
+    },
+    {
+        text: "New Collection Available! Check out different categories. "
+    },
+]
 
 export default function Latests() {
     const [currentLatest, setCurrentLatest] = useState(0)
@@ -20,7 +30,7 @@ export default function Latests() {
   return (
     <div className='w-full bg-black flex flex-col items-center overflow-hidden h-[36px]'>
         {latests.map((latest, index) => (
-            <div className='w-full h-[36px] text-white transition-all duration-300 ease-in-out text-center flex-shrink-0 flex-grow-0 flex flex-col items-center justify-center' key={index} style={{transform: `translateY(${-100*currentLatest}%)`}}>
+            <div className='w-full h-full text-white transition-all duration-300 ease-in-out text-center flex-shrink-0 flex-grow-0 flex flex-col items-center justify-center text-[14px]' key={index} style={{transform: `translateY(${-100*currentLatest}%)`}}>
                 {latest.text}
             </div>
         ))}            

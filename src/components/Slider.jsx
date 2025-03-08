@@ -8,19 +8,19 @@ import i4 from '../assets/shop/7.jpg'
 const slides = [
     {
         src: i1,
-        alt: 'Trekky.in'
+        alt: 'treky.in'
     },
     {
         src: i2,
-        alt: 'Trekky.in'
+        alt: 'treky.in'
     },
     {
         src: i3,
-        alt: 'Trekky.in'
+        alt: 'treky.in'
     },
     {
         src: i4,
-        alt: 'Trekky.in'
+        alt: 'treky.in'
     },
 ]
 

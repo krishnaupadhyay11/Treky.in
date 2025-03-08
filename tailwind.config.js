@@ -7,7 +7,8 @@ export default {
         'logo1': '#FF650B',
       },
       fontFamily: {
-        'arial': ["Arial MT Black", 'sans-serif']
+        'arial': ["Arial MT Black", 'sans-serif'],
+        'arial-rounded': ["Arial Rounded MT", 'sans-serif'],
       }
     },
   },

@@ -44,18 +44,6 @@ export const socials = [
     },
 ]
 
-export const latests = [
-    {
-        text: 'We offer Home Delivery on select products. Contact for enquiry.'
-    },
-    {
-        text: 'We are now 30,000+ subscribers on YouTube.'
-    },
-    {
-        text: "New Collection Available! Check out different categories. "
-    },
-]
-
 import jackets from './assets/categories/jackets.jpg'
 import pants from './assets/categories/pants.jpg'
 import footwear from './assets/categories/footwear.jpg'
