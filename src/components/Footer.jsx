@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         <div className='w-full px-4 py-2 bg-black text-white flex justify-center items-center'>
-            <h1 className='text-center'>&#169; 2025 treky.in. Designed and Developed by <Link to='https://krishnaupadhyay.vercel.app' className='text-logo1' target='_blank'>
+            <h1 className='text-center'>&#169; 2025 Treky.in. Designed and Developed by <Link to='https://krishnaupadhyay.vercel.app' className='text-logo1' target='_blank'>
                     Krishna.
                 </Link>
             </h1>
