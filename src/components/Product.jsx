@@ -9,7 +9,7 @@ const Product = ({productImageSrc, productName, productMRP, productId, pageName}
         </div>
         <div className="flex w-[90%] justify-between items-center">
             <div className="w-full flex flex-col gap-2">
-                <h2 className="font-bold">{productName}</h2>
+                <h2 className="font-semibold">{productName}</h2>
 
                 <h2 className="">{`M.R.P. ₹${productMRP}`}</h2>
             </div>

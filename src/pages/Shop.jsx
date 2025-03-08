@@ -38,7 +38,7 @@ export default function Shop() {
             <img src={headBg} alt="Treky.in" className="w-full h-full object-cover absolute" loading="lazy" />
             <div className="w-full h-full absolute bg-black opacity-50"></div>
 
-            <h1 className="text-[36px] md:text-[48px] font-bold text-center font-arial z-50">TREKKING EQUIPMENTS <br />
+            <h1 className="text-[36px] md:text-[48px] font-semibold text-center font-arial z-50">TREKKING EQUIPMENTS <br />
             <span className="text-orange-500  text-[48px] md:text-[64px] font-arial-rounded">TREKY</span></h1>
 
         </div>
@@ -55,8 +55,8 @@ export default function Shop() {
                     ))}
                 </div>
 
-                <div className="w-full max-w-[600px] flex flex-col">
-                    <h1 className="text-[36px] font-bold">Best Trekking Store in Delhi</h1>
+                <div className="w-full max-w-[600px] flex flex-col px-4 md:px-0">
+                    <h1 className="text-[36px] font-semibold">Best Trekking Store in Delhi</h1>
                     <p>Providing high-quality equipments for Camping, Hiking and Trekking. Get Equipped and Set out on the adventure.</p>
                     <a href='https://maps.app.goo.gl/N5Z1CHoiPrA5mfqG9' className='px-3 py-2 bg-black text-white mt-4 max-w-[fit-content]'>
                         <h1>Visit Shop</h1> 
@@ -74,7 +74,7 @@ export default function Shop() {
                 </div>
 
                 <div className="w-full max-w-[600px] flex flex-col">
-                    <h1 className="text-[36px] font-bold">ALL ADVENTURE ESSENTIALS</h1>
+                    <h1 className="text-[36px] font-semibold">ALL ADVENTURE ESSENTIALS</h1>
                     <p>For the maximum performance and adventure. Reliability that makes you feel at home in the outdoors.</p>
                     <a href='https://maps.app.goo.gl/N5Z1CHoiPrA5mfqG9' className='px-3 py-2 bg-black text-white mt-4 max-w-[fit-content]'>
                         <h1>Visit Shop</h1>

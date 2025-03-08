@@ -1,10 +1,22 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import logo from '../assets/logobl.png'
 import { socials } from '../constants'
 import { navLinks } from '../constants'
 
 export default function Footer() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+        const element = document.getElementById(location.hash.slice(1));
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    }, [location]);
+    
   return (
     <footer className="w-full h-full bg-[#f0f0f0] mt-12 flex flex-col">
         <div className="w-full max-w-7xl flex flex-col md:flex-row gap-4 p-8 pb-12 justify-around">
@@ -14,7 +26,7 @@ export default function Footer() {
                 </div>
 
                 <div className='flex flex-col items-center gap-2'>
-                    <h1 className='text-[24px] font-bold mb-1'>Contact Us</h1>
+                    <h1 className='text-[24px] font-semibold mb-1'>Contact Us</h1>
 
                     <h2 className='text-center text-[18px]'>Manpreet Singh</h2>
 
@@ -41,7 +53,7 @@ export default function Footer() {
             </div>
 
             <div className='flex flex-col items-center gap-2'>
-                <h1 className='text-[24px] font-bold mb-2'>Address</h1>
+                <h1 className='text-[24px] font-semibold mb-2'>Address</h1>
 
                 <p className="text-center">
                     17A/1 Main Road, Govindpuri, <br />
@@ -60,7 +72,7 @@ export default function Footer() {
             </div>
 
             <div className='flex flex-col gap-2 items-center'>
-                <h1 className='text-[24px] font-bold mb-2'>Useful Links</h1>
+                <h1 className='text-[24px] font-semibold mb-2'>Useful Links</h1>
 
                 <ul className='flex flex-col gap-2 items-center'>
                     {navLinks.map((navLink) => (

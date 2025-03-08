@@ -33,16 +33,16 @@ export default function ProductDetail() {
                 .map((categoryProduct) => (
                     <div key={categoryProduct.id} className="mt-12 p-8 md:p-12 w-full max-w-7xl flex flex-col items-center md:flex-row md:items-start gap-10 md:gap-16">
                         <div className="w-[300px] md:w-[450px] ">
-                            <img src={categoryProduct.image} alt={categoryProduct.name} className="w-full h-full object-contain" />
+                            <img src={categoryProduct.image} alt={categoryProduct.name} className="w-full h-full object-contain" loading="lazy"/>
                         </div>
 
                         <div className="h-full flex flex-col items-center py-4 md:py-8 md:mt-10">
                             <div className="flex flex-col gap-2 mb-4 md:mb-8">
-                                <h1 className="text-[28px] font-bold font-sans">{categoryProduct.name}</h1>
+                                <h1 className="text-[28px] font-semibold font-sans">{categoryProduct.name}</h1>
                                 <h1 className="text-[20px]">{`M.R.P. ₹${categoryProduct.MRP}`}</h1>
                             </div>
                             <div className="flex flex-col items-center">
-                                <h1 className="text-[24px] font-bold text-center">Get This Product</h1>
+                                <h1 className="text-[24px] font-semibold text-center">Get This Product</h1>
 
                                 <div className="flex items-center justify-center gap-4 mt-4">
                                     <a aria-label="Chat on WhatsApp" href={`https://wa.me/919555008889?text=${encodeURIComponent(`Hi, I'm interested in ${categoryProduct.name}`)}`} target="_blank" rel="noopener noreferrer" className='flex items-center'>

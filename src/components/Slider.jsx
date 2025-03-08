@@ -47,7 +47,7 @@ const ImageSlider = ({slides}) => {
     <div className='w-full h-full relative flex'>
         <div className='w-full h-full flex overflow-hidden'>
             {slides.map((slide, index) => (
-                <img key={index} src={slide.src} alt={slide.alt} className='w-full h-full object-cover flex-shrink-0 flex-grow-0 transition-all duration-300 ease-in-out' style={{translate: `${-100*currentIndex}%`}}/>
+                <img key={index} src={slide.src} alt={slide.alt} className='w-full h-full object-cover flex-shrink-0 flex-grow-0 transition-all duration-300 ease-in-out' style={{translate: `${-100*currentIndex}%`}} loading="lazy"/>
             ))}       
         </div>   
         

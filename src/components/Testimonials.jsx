@@ -3,7 +3,7 @@ export default function Testimonials() {
     <div className="w-full p-2 py-4 md:py-8 mt-12 bg-[#ff962d] flex flex-col items-center">
         <div className="w-full max-w-6xl flex flex-col items-center gap-4">
           <div className="flex flex-col items-center">
-            <h1 className="text-[36px] text-center font-bold text-white">Testimonials</h1>
+            <h1 className="text-[36px] text-center font-semibold text-white">Testimonials</h1>
             <h2 className="text-white text-center">See What Others Say About Us</h2>
           </div>
 

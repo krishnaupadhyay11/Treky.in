@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#categories {
+    scroll-margin-top: 150px;
+}
+
 .shop_button::after {
     content: '';
     display: block;
