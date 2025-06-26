@@ -30,6 +30,7 @@ export default function App() {
         <Route path="/footwear" element={<Footwear />} />
         <Route path="/camping" element={<Camping />} />
         <Route path={`/clothing/:id`} element={<ProductDetail />} />
+        <Route path={`/footwear/:id`} element={<ProductDetail />} />
         <Route path={`/camping/:id`} element={<ProductDetail />} />
 
         <Route path="*" element={<NotFound />} />

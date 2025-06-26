@@ -9,7 +9,8 @@ import camping from "../store/camping/camping"
 export default function Camping() {
   return (
     <>
-        <Header />
+      <Header />
+      <div className="w-full flex flex-col items-center relative top-[70px]">
         <Latests />
         <PageLayout
             pageName='Camping'
@@ -17,6 +18,7 @@ export default function Camping() {
             products={camping}
         />
         <Footer />
+      </div>
     </>
   )
 }

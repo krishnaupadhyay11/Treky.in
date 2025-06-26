@@ -10,13 +10,15 @@ export default function Clothing() {
   return (
     <>
         <Header />
-        <Latests />
-        <PageLayout
-            pageName='Clothing'
-            headBg={clothingBg}
-            products={clothing}
-        />
-        <Footer />
+        <div className="w-full flex flex-col items-center relative top-[70px]">
+          <Latests />
+          <PageLayout
+              pageName='Clothing'
+              headBg={clothingBg}
+              products={clothing}
+          />
+          <Footer />
+        </div>
     </>
   )
 }

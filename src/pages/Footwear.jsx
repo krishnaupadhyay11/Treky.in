@@ -10,13 +10,15 @@ export default function Footwear() {
   return (
     <>
         <Header />
-        <Latests />
-        <PageLayout 
-            pageName='Footwear'
-            headBg={shoes}
-            products={footwear}
-        />
-        <Footer />
+        <div className="w-full flex flex-col items-center relative top-[70px]">
+          <Latests />
+          <PageLayout 
+              pageName='Footwear'
+              headBg={shoes}
+              products={footwear}
+          />
+          <Footer />
+        </div>
     </>
   )
 }
