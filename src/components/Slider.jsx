@@ -1,26 +1,26 @@
 import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-import i1 from '../assets/shop/1.jpg'
-import i2 from '../assets/shop/6.jpg'
-import i3 from '../assets/shop/8.jpg'
-import i4 from '../assets/shop/7.jpg'
+import i1 from '../assets/graphics/pex.jpg'
+import i2 from '../assets/graphics/dec.jpg'
+import i3 from '../assets/graphics/coleman.jpg'
 
 const slides = [
     {
         src: i1,
-        alt: 'treky.in'
+        alt: 'treky.in',
+        heading: 'SCALE NEW HEIGHTS'
     },
     {
         src: i2,
-        alt: 'treky.in'
+        alt: 'treky.in',
+        heading: 'BE LIMITLESS'
     },
     {
         src: i3,
-        alt: 'treky.in'
-    },
-    {
-        src: i4,
-        alt: 'treky.in'
+        alt: 'treky.in',
+        heading: 'FOR THE SOULFUL SOJOURNS'
     },
 ]
 
@@ -29,16 +29,20 @@ const ImageSlider = ({slides}) => {
   
     const goPrevious = () => {
       setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+      Aos.refresh();
     }
   
     const goNext = () => {
       setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      Aos.refresh();
     }
   
     useEffect(() => {
       let autoScroll = setTimeout(() => {
         goNext();
       }, 5000)
+
+      Aos.init()
   
       return () => clearTimeout(autoScroll)
     }, [currentIndex])
@@ -49,12 +53,18 @@ const ImageSlider = ({slides}) => {
             {slides.map((slide, index) => (
                 <img key={index} src={slide.src} alt={slide.alt} className='w-full h-full object-cover flex-shrink-0 flex-grow-0 transition-all duration-300 ease-in-out' style={{translate: `${-100*currentIndex}%`}} loading="lazy"/>
             ))}       
-        </div>   
+        </div>
+
+        <div className="w-full h-full absolute top-0 left-0 bg-black/40 z-10" />
+            
+        <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center justify-center">
+            <h1 key={currentIndex} className='text-3xl lg:text-5xl font-bold text-gray-300 font-impact italic mt-12' data-aos="fade-up" data-aos-duration="1000">{slides[currentIndex].heading}</h1>
+        </div>
         
-        <div className='absolute top-1/2 translate-y-[-50%] left-4 lg:left-8 text-5xl text-white z-10 cursor-pointer' onClick={goPrevious}>
+        <div className='absolute top-1/2 translate-y-[-50%] left-4 lg:left-8 text-5xl text-white cursor-pointer z-[99]' onClick={goPrevious}>
             <i className="uil uil-angle-left"></i>
         </div>
-        <div className='absolute top-1/2 translate-y-[-50%] right-4 lg:right-8 text-5xl text-white z-10 cursor-pointer' onClick={goNext}>
+        <div className='absolute top-1/2 translate-y-[-50%] right-4 lg:right-8 text-5xl text-white cursor-pointer z-[99]' onClick={goNext}>
             <i className="uil uil-angle-right"></i>
         </div>
     </div>
@@ -63,7 +73,7 @@ const ImageSlider = ({slides}) => {
 
 export default function Slider() {
     return (
-        <div className="h-[450px] w-full mt-4">
+        <div className="h-[450px] w-full">
             <ImageSlider slides={slides} />
         </div>
     )

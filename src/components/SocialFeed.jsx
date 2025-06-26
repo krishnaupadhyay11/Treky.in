@@ -9,15 +9,21 @@ export default function SocialFeed() {
       try {
         const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UC8SlG0ilpeRDZPRHpVsqSLg`)
         const data = await res.json()
-        const latestVideoId = data.items[0].link.split("=")[1];
-        setLatestVideo(latestVideoId);
+        const link = data.items[0].link;
 
+        let latestVideoId = null;
+        if (link.includes("/watch?v=")) {
+          latestVideoId = link.split("v=")[1];
+        } else if (link.includes("/shorts/")) {
+          latestVideoId = link.split("/shorts/")[1].split(/[?#]/)[0]; // remove query/hash if present
+        }
+        setLatestVideo(latestVideoId);
       } catch (error) {
         console.error("Error fetching latest video:", error);
       }
     }
     fetchLatestVideo()
-  }, [])
+  }, [latestVideo])
 
   if (!latestVideo) return <p>Loading latest video...</p>
 
@@ -25,9 +31,9 @@ export default function SocialFeed() {
     <div className="w-full p-4 pb-8 mt-12 bg-[#47a76f]  text-white">
         <h1 className="text-center font-semibold text-[36px]">Social Feed</h1>
 
-        <div className="w-full max-w-7xl mt-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="w-full max-w-7xl mt-4 p-4 flex flex-col md:flex-row justify-center items-center">
 
-          <div className="w-1/2">
+          <div className="max-w-[600px] w-full">
             <h1 className="text-[24px] text-center font-bold mb-2">Latest YouTube Video</h1>
 
             <iframe

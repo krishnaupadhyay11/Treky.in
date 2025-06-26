@@ -20,7 +20,7 @@ const looks = [
     {
         index: 3,
         heading: 'CAMPING ESSENTIALS',
-        subheading: 'Feel at home in outdoors with our camping equipments',
+        subheading: 'Feel at home in outdoors with our camping equipment',
         image: camping
     }
 ]
