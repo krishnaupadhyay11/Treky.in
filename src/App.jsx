@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Homepage, Clothing, Footwear, ProductDetail, Shop, Camping } from './pages/index'
+import { Homepage, Clothing, Footwear, ProductDetail, Shop, Camping, NotFound } from './pages/index'
 
 import ScrollToTop from './components/ScrollToTop'
 
@@ -31,6 +31,8 @@ export default function App() {
         <Route path="/camping" element={<Camping />} />
         <Route path={`/clothing/:id`} element={<ProductDetail />} />
         <Route path={`/camping/:id`} element={<ProductDetail />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )
