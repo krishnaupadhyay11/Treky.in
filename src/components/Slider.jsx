@@ -59,7 +59,7 @@ const ImageSlider = ({slides}) => {
             
         <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center justify-center px-4">
             <div className="w-full max-w-[400px] md:max-w-full text-center">
-                <h1 key={currentIndex} className='text-3xl lg:text-5xl font-bold text-gray-300 font-impact italic md:mt-12 text-center' data-aos="fade-up" data-aos-duration="1000">{slides[currentIndex].heading}</h1>
+                <h1 key={currentIndex} className='text-2xl lg:text-5xl font-bold text-gray-300 font-impact italic md:mt-12 text-center' data-aos="fade-up" data-aos-duration="1000">{slides[currentIndex].heading}</h1>
             </div>
         </div>
         
