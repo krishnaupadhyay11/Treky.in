@@ -16,6 +16,7 @@ export default function Clothing() {
               pageName='Clothing'
               headBg={clothingBg}
               products={clothing}
+              pageLink='clothing'
           />
           <Footer />
         </div>

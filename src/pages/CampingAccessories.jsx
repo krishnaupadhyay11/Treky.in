@@ -3,19 +3,20 @@ import Latests from "../components/Latests"
 import PageLayout from "../components/PageLayout"
 import Footer from "../components/Footer"
 
-import campingBg from '../assets/graphics/tent.jpg'
-import camping from "../store/camping/camping"
+import caBg from '../assets/graphics/stove.jpg'
+import ca from "../store/camping-accessories/camping-accessories"
 
-export default function Camping() {
+export default function CampingAccessories() {
   return (
     <>
       <Header />
       <div className="w-full flex flex-col items-center relative top-[70px]">
         <Latests />
         <PageLayout
-            pageName='Camping'
-            headBg={campingBg}
-            products={camping}
+            pageName='Camping Accessories'
+            headBg={caBg}
+            products={ca}
+            pageLink='camping-accessories'
         />
         <Footer />
       </div>

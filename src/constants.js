@@ -8,16 +8,16 @@ export const navLinks = [
         link: '/footwear'
     },
     {
-        title: 'Gear',
-        link: '/gear'
+        title: 'Camping Furniture',
+        link: '/camping-furniture'
     },
     {
-        title: 'Camping',
-        link: '/camping'
+        title: 'Accessories',
+        link: '/camping-accessories'
     },
     {
-        title: 'Furniture',
-        link: '/furniture'
+        title: 'Tents',
+        link: '/tents'
     },
 ]
 
@@ -55,31 +55,38 @@ import tents from './assets/categories/tents.jpg'
 export const popCategories = [
     {
         src: jackets,
-        title: 'Jackets'
+        title: 'Jackets',
+        link: 'clothing'
     },
     {
         src: pants,
-        title: 'Pants'
+        title: 'Pants',
+        link: 'clothing'
     },
     {
         src: footwear,
-        title: 'Footwear'
+        title: 'Footwear',
+        link: 'footwear'
     },
     {
         src: backpacks,
-        title: 'Packs'
+        title: 'Packs',
+        link: '/'
     },
     {
         src: kitchen_items,
-        title: 'Kitchen Items'
+        title: 'Kitchen Items',
+        link: 'camping-accessories'
     },
     {
         src: sleeping_bags,
-        title: 'Sleeping Bags'
+        title: 'Sleeping Bags',
+        link: 'sleeping-bags'
     },
     {
         src: tents,
-        title: 'Tents'
+        title: 'Tents',
+        link: 'tents'
     },
 ]
 

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
-const Product = ({productImageSrc, productName, productMRP, productId, pageName}) => (
+const Product = ({productImageSrc, productName, productMRP, productId, pageLink}) => (
     <div className="flex flex-col gap-4 items-center justify-between h-full">
         <div className="max-w-[300px] overflow-hidden ">
-            <Link to={`/${pageName.toLowerCase()}/${productId}`}>
+            <Link to={`/${pageLink}/${productId}`}>
                 <img src={productImageSrc} alt="Treky.in Products" className="w-full h-full object-contain" loading="lazy"/>            
             </Link>
         </div>
